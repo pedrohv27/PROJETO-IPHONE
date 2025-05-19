@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.img-iphone {
+    width: 445px;
+    margin-top: 50px;
+    z-index: 2;
+    animation: 1.5s ease-in-out  iphone-aparece;
+}
+
+main .div-principal h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main .div-principal h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+main .div-principal p {
+    margin-bottom: 10px;
+
+}
+
+main .div-principal h6 {
+    color: #626262;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+main .div-principal button {
+    background-color: #0071e3;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s ease-in-out;
+
+}
+
+main .div-principal button:hover {
+   background-color: #80c0ff;
+}
+
+main .div-principal button:active {
+   background-color: #c6e3ff;
+}
+
+main .div-principal h5 {
+
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+main .div-principal .conteudo {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+main .div-principal .conteudo span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+   
+}
+
+#azul {
+    background-color: #81A5C4;
+}
+
+#azul:hover {
+    background-color: #cee7fc;
+}
+
+
+#amarelo {
+    background-color: #F7DA47;
+}
+
+#amarelo:hover {
+    background-color: #f2e089;
+}
+
+#branco {
+    background-color: #C1C1C1;
+}
+
+#branco:hover {
+    background-color: #dedede;
+}
+
+#preto {
+    background-color: #272D33;
+}
+
+#preto:hover {
+    background-color: #7a7b7b;
+}
+
+#vermelho {
+    background-color: #B50012;
+}
+
+#vermelho:hover {
+    background-color: #c05963;
+}
+
+#roxo {
+    background-color: #EDE7F1;
+}
+
+#roxo:hover {
+    background-color: #d6d6d6;
+}
+
+.circulo{
+    background-color: #81A5C4;
+    clip-path: circle(600px at right 1000px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 2.5s ease-in-out circulo-aperece;
+}
+
+@keyframes iphone-aparece {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 500px;
+    }
+    
+}
+
+@keyframes circulo-aperece {
+    0% {
+        clip-path: circle(0%);
+    }
+    
+    40% {
+       clip-path: circle(800px at right 1000px);
+    }
+
+    100% {
+       clip-path: circle(600px at right 1000px);
+    }
+}
+
+
+
